@@ -1,0 +1,338 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner 
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../assets/12.jpg");
+    background-size: cover;
+    background-position: center ;
+
+}
+
+.nav
+{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.nav h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav ul li{
+    list-style:none;
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#8f4068;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+
+
+}
+
+.nav ul li:hover::after
+{
+    width: 100%;
+}
+
+.content1
+{
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    
+}
+
+.content1 h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content1 p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 28px;
+}
+
+button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid #009688;
+    background: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    
+
+
+}
+
+span
+{
+    background: #009688;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+
+}
+
+button:hover span{
+    width: 100%;
+
+}
+
+button:hover{
+    border: none;
+}
+
+.mission
+{
+    margin: 30px;
+    text-align: center;
+}
+
+.mission h1{
+    color: #009688;
+}
+
+.mission p
+{
+    font-size: 20px;
+
+}
+
+.container-fluid h2{
+    text-align: center;
+    color: #009688;
+    padding: 10px;
+    font-size: 37px;
+    text-decoration-line: underline;
+    bottom: 2px;
+}
+
+.box
+{
+    margin-left: 250px;
+    width: 335px;
+    padding: 25px;
+    background-color: azure;
+    float: left;
+    height: 400px;
+    cursor: pointer;
+}
+
+.box img{
+    width: 335px;
+    height: 220px;
+}
+
+.box h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    margin-top: 5px;
+   
+
+}
+
+.box p{
+
+   
+    padding: 5px;
+    font-size: 23px;
+    margin-top: 7px;
+    color: #7eca9c;
+    
+
+}
+
+.clearfix{
+    clear: both;
+}
+
+.para
+{
+    margin-left: 250px;
+    margin-top: 25px;
+    padding: 5px;
+    width: 1020px;
+}
+
+.para p{
+    font-size: 20px;
+    margin-top: 5px;
+ 
+}
+
+
+.but
+{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid #009688;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color:#e40017;
+    position: relative;
+    overflow: hidden;
+    
+
+
+}
+
+.but span
+{
+    background:#8ac4d0;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+
+}
+
+but:hover span{
+    width: 100%;
+
+}
+
+but:hover{
+    border: none;
+}
+
+.image{
+    margin-top: 10px;
+}
+
+.image img
+{
+    
+    width: 1519px;
+    height: 600px;
+}
+
+
+
+.footer
+{
+    background-color:#f6f5f5;
+   
+    padding: 25px;
+   
+    height: auto;
+    font-size: small;
+}
+
+.foot{
+    width: 250px;
+    height: auto;
+    float: left;
+    font-family: sans-serif;
+    padding: 5px;
+    margin-left: 100px;
+
+}
+
+.foot>ul{
+    margin-top: 5px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.foot>ul>li>a{
+    
+    bottom :5px;
+    margin-bottom: 5px;
+    display : block;
+    text-decoration: none;
+    font-size: small;
+    color: #5eaaa8;
+
+}
+
+
+.footer address h3{
+
+    font-size: 27px;
+}
+
+
+
+.footer address p{
+    font-size: small;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.footer address p>a{
+    color: teal;
+}
+
+.copy
+{
+    padding: 20px;
+    background-color:#94b5c0;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.copy p{
+    margin: 0px;
+}
