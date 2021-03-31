@@ -20,13 +20,13 @@ const Home=()=>{
                     <div className="nav">
                         <h1>Food Finders</h1>
                         <ul>
-                            <li><a href="#">Home</a> </li>
-                            <li><a href="#">Food</a> </li>
+                            <li><a href="/">Home</a> </li>
+                            <li><a href="/Food">Food</a> </li>
                             <li><a href="#">For NGO</a> </li>
-                            <li><a href="#">Donate</a> </li>
-                            <li><a href="#">Team</a> </li>
+                            <li><a href="/Donate">Donate</a> </li>
+                            <li><a href="/Team">Team</a> </li>
                             <li><a href="#">Location</a> </li>
-                            <li><Avatar><a href="/Register">V</a></Avatar></li>
+                            <li><Avatar><a href="/Profile">V</a></Avatar></li>
                         </ul>
                     </div>
             
@@ -37,7 +37,7 @@ const Home=()=>{
                         </p>
             
                         <div>
-                            <button type="button"><span></span> Donate Now</button>
+                            <button type="button" ><a href="/Donate">Donate Now</a> </button>
                         </div>
             
             
@@ -177,13 +177,15 @@ const Home=()=>{
                     <div className="nav">
                         <h1>Food Finders</h1>
                         <ul>
-                            <li><a href="#">Home</a> </li>
-                            <li><a href="#">Food</a> </li>
+                            <li><a href="/">Home</a> </li>
+                            <li><a href="/Food">Food</a> </li>
                             <li><a href="#">For NGO</a> </li>
-                            <li><a href="#">Donate</a> </li>
-                            <li><a href="#">Team</a> </li>
+                            <li><a href="/Donate">Donate</a> </li>
+                            <li><a href="/Team">Team</a> </li>
                             <li><a href="/Login">Login</a> </li>
                             <li><a href="/Register">Register</a> </li>
+                            <li><a href="/Hotel_Restaurant_R">Register Organisation</a> </li>
+                            <li><a href="/Register">Register NGO</a> </li>
                         </ul>
                     </div>
             
@@ -194,7 +196,7 @@ const Home=()=>{
                         </p>
             
                         <div>
-                            <button type="button"><span></span> Donate Now</button>
+                        <button type="button" ><a href="/Donate">Donate Now</a> </button>
                         </div>
             
             

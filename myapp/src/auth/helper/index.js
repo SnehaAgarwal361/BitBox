@@ -34,6 +34,22 @@ export const login=user=>{
 }
 
 
+export const update=user=>{
+    return fetch(`${API}update`,{
+        method:"PUT",
+        headers:{
+            Accept:"application/json",
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(user)
+    }).then(response=>{
+        //console.log(response.json());
+        return response.json();
+    })
+    .catch(err=>console.log(err))
+}
+
+
 export const authenticate=(data,next)=>{
     
     if(typeof window!==undefined)
@@ -57,6 +73,9 @@ export const Logout=next=>{
     }
 }
 
+
+
+
 export const isAuthenticated=()=>{
     if(typeof window==undefined)
     {
@@ -68,4 +87,19 @@ export const isAuthenticated=()=>{
     }else{
         return false;
     }
+}
+
+export const food=user=>{
+    return fetch(`${API}food`,{
+        method:"POST",
+        headers:{
+            Accept:"application/json",
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(user)
+    }).then(response=>{
+        //console.log(response.json());
+        return response.json();
+    })
+    .catch(err=>console.log(err))
 }

@@ -1,0 +1,315 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+
+
+.contact-wrap{
+    width:80%;
+    height:auto;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+.contact-in{
+    padding:40px 30px;
+}
+.contact-in:nth-child(1)
+{
+    flex:30%;
+    color:#fff;
+    /* background:url(../IMAGES/back.jpg.crdownload); */
+}
+.contact-in:nth-child(2)
+{
+    background: cornflowerblue;
+    flex:45%;
+}
+.contact-in:nth-child(3)
+{
+    flex:25%;
+    padding:0;
+}
+.contact-in h1{
+    font-size:24px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-in h2{
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-in h2 i{
+    font-size:16px;
+    width:40px;
+    height:40px;
+    margin-right:10px;
+    background: #f5f5f5;
+    color:#000;
+    border-radius:50px;
+    line-height:40px;
+}
+.contact-in p{
+    font-size: 20px;
+    font-weight:400;
+    margin-bottom:15px;
+}
+.overlay{
+    display:block;
+    opacity:0;
+    position:absolute;
+    top:10%;
+    margin-left: 0;
+    width:70px;
+}
+.product-top:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+.overlay .fa{
+    cursor: pointer;
+    background-color: #fff;
+    color:#000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom:5%;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border:none !important;
+    box-shadow: none !important;
+}
+
+.k a{
+    display: block;
+    text-decoration: none;
+    background-color:teal;
+    color: white;
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 8px;
+    text-align: center;
+}
+.k a:hover{
+    background-color: orange;
+}
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: consolas;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#111;
+}
+
+ .box{
+    position:relative;
+    width:1020px;
+    height:600px;
+    color:#fff;
+    background: rgb(33, 36, 11);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container .box::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+
+.container .box::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter:blur(30px);
+}
+.container .box span{
+    position:absolute;
+    top:6px;
+    right:6px;
+    left:6px;
+    bottom:6px;
+    background: rgb(33, 36, 11);
+    z-index:2;
+}
+.container .box span::before{
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background: rgb(33, 36, 11);
+    pointer-events:none;
+}
+.container .box .con{
+    position:relative;
+    z-index:10;
+    padding:20px 40px;
+}
+.card1
+{
+    display:grid;
+    grid-template-columns:300px;
+    grid-template-rows:210px 210px 80px;
+    grid-template-areas:"image" "text" "stats";
+    font-family: roboto;
+    border-radius:18px;
+    background: white;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.9);
+    text-align:center;
+    transition:0.5s ease;
+    cursor:pointer;
+    margin:20px;
+}
+.card-img{
+    grid-area:image;
+    background: url('../assets/h1.jpg');
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    background-size:cover;
+}
+.card-text{
+    grid-area:text;
+    margin:25px;
+}
+.card-text .date{
+    color:rgb(255,7,110);
+    font: size 25px;
+        font-weight: 400;
+}
+.card-text p{
+    color:rgb(41, 38, 38);
+    font-size:15px;
+    font-weight:300;
+}
+.card-text h2{
+    margin-top:0px;
+    font-size:28px;
+}
+.sub input[type="submit"]{
+	color:rgb(239, 250, 224);
+	text-transform: uppercase;
+    background: rgb(29, 146, 150);
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 8px;
+	margin-top: 10px;
+	display: block;
+    font-size: medium;
+	cursor: pointer;
+    height:40px;
+    margin-left:50px;
+    font-family: roboto;
+    border-radius:12px;
+    font-weight: 400;
+}
+.sub input[type="submit"]:hover{
+	color: ivory;
+	background-color: rgb(46, 76, 247);
+    font-weight: 400;
+}
+.card-stats{
+    grid-area:stats;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    background:rgb(255,7,110);
+}
+ .stats{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:10px;
+    color:white;
+}
+.stats .type{
+    font-size:11px;
+    font-weight:300;
+    text-transform:uppercase;
+}
+ .stats .value
+{
+    font-size:22px;
+    font-weight:500;
+}
+ .value sup{
+    font-size:12px;
+}
+.card1:hover{
+    transform:scale(1.1);
+    box-shadow:5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card-text .date1{
+    color:rgb(240, 68, 16);
+    font: size 25px;
+        font-weight: 400;
+}
+
+.card-stats1{
+    grid-area:stats;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    background:rgb(240, 68, 16);
+}
+
+.card-img2{
+    grid-area:image;
+    background: url('../assets/bg-img2.jpg');
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    background-size:cover;
+}
+.card-text .date2{
+    color:rgb(98, 240, 16);
+    font: size 25px;
+        font-weight: 400;
+}
+
+.card-stats2{
+    grid-area:stats;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    background:rgb(98, 240, 16);
+}
+
+.card-img3{
+    grid-area:image;
+    background: url('../assets/h3.jpg');
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    background-size:cover;
+}

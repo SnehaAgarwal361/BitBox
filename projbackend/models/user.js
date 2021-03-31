@@ -4,7 +4,6 @@ var mongoose = require('mongoose');
   var userSchema = new Schema({
     username:{
         type: String,
-        required: true,
         maxlength: 32,
         trim: true
     },
@@ -15,36 +14,44 @@ var mongoose = require('mongoose');
         unique:true
     },
     password:{
-        type: String,
-        required: true
+        type: String
     },
     role:{
         type:Number,
         default: 0
     },
-    userinfo:{
+    
         first_name:{
-            type:String
+            type:String,
+            default: ""
         },
         last_name:{
-            type:String
+            type:String,
+            default: ""
         },
-        country:{
-            type:String
-        },
+        
         city:{
-            type:String
+            type:String,
+            default: ""
         },
         address:{
-            type:String
+            type:String,
+            default: ""
         },
         telephone:{
-            type:Number
+            type:String,
+            default: ""
         },
         mobile:{
-            type:Number
+            type:String,
+            default: ""
+        },
+        img: {
+            type:String,
+            default:""
         }
-    }
+
+    
   },{
       timestamps:true
   });
